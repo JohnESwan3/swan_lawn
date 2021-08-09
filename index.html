@@ -311,14 +311,7 @@
       <!-- About - Two Column Section -->
         <div class="container-fluid padding bg-dark text-light"id="about">
           <div class="row padding">
-            <div class="col-lg-6">
-              <img
-                src="img/sprinkler-temp05.jpg"
-                alt="Close up of sprinkler"
-                class="img-fluid"
-              />
-              <br />
-            </div>
+            
             <div class="col-lg-6">
               <h2>About Swan Lawn</h2>
               <p>
@@ -331,11 +324,88 @@
               </p>
               <br />
             </div>
+            <div class="col-lg-6">
+                <img
+                  src="img/sprinkler-temp05.jpg"
+                  alt="Close up of sprinkler"
+                  class="img-fluid"
+                />
+              
+              </div>
           </div>
         </div>
-      <!-- Two Column Section -->
+
+        <!-- Contact Form -->
+        <div class="container-fluid padding bg-dark text-light" id="contact">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Connect With Swan Lawn</h3>
+                    <p class="lead">Send a message to request a quote and we will contact you ASAP</p>
+                    <form action="contact.php" method="post" id="contact-form">
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">First Name *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please Enter Your First Name" required="required" data-error="First Name is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Last Name *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please Enter Your Last Name" requried="required" data-error="Last Name is Requried">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please Enter Your Email" required="required" data-error="Valid Email is Required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_need">What Service Are You Interested In?</label>
+                                        <select id="form_need" name="need" class="form-control" required="required" data-error="Please Tell Us Your Interest">
+                                            <option value=""></option>
+                                            <option value="Request Quotation">Request Quotation</option>
+                                            <option value="Request More Info">Request More Info</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">How Can We Help? *</label>
+                                        <textarea id="form_message" name="message" class="form-control" rows="4" placeholder="Any info you give us will help us." required="required" data-error="Please Leave A Message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-primary btn-send" value="Send Message">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted">
+                                        <strong>*</strong> These fields are required.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
       <!-- Connect -->
+
     </div>
     <!-- Footer -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -344,7 +414,5 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="app.js"></script>
   </body>
 </html>
