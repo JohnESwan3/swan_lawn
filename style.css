@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+a {
+  text-decoration: none;
+}
+
 /* Firefox Fixes */
 .carousel-item {
   transition: -webkit-transorm 0.5s ease;
