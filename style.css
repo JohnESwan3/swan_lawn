@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+html {
+  max-width: 1920px;
+  background-color: #292b2c;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -11,6 +17,11 @@ a {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
+}
+
+.carousel img {
+  max-height: 768px;
+  min-width: auto;
 }
 
 /* Fixed background image */
