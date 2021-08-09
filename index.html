@@ -18,6 +18,28 @@
     <meta name="language" content="English" />
     <meta name="author" content="John Swan" />
 
+    <!-- Favicons and Phone Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon_io/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon_io/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link rel="manifest" href="/favicon_io/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="theme-color" content="#5cb85c" />
+
     <!-- Font Awesoem -->
     <link
       rel="stylesheet"
@@ -38,6 +60,8 @@
     <title>Swan Lawn</title>
   </head>
   <body>
+    <!-- Home tag for navigation -->
+    <div id="home"></div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container-fluid">
@@ -74,7 +98,7 @@
       </div>
     </nav>
     <!-- Image Slider -->
-    <div class="carousel slide" id="slides" data-bs-ride="carousel">
+    <div class="carousel slide" id="slides " data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button
           type="button"
@@ -150,12 +174,12 @@
       </div>
     </div>
 
-    <!-- Welcome Section -->
+    <!-- Content Break -->
     <div class="container-fluid padding bg-secondary text-light">
       <div class="row welcome text-center">
         <div class="col-12">
           <h1 class="display-4">Lorem, ipsum dolor.</h1>
-          <hr />
+          <hr class="my-4" />
           <div class="col12">
             <p class="lead">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -168,32 +192,104 @@
     </div>
 
     <!-- Two Column Section -->
-    <div class="container-fluid padding bg-dark text-light">
+    <div class="container-fluid padding bg-dark text-light" id="services">
       <div class="row padding">
         <div class="col-lg-6">
-          <h2>Lorem, ipsum dolor...</h2>
+          <h2>We Specialize in a Variety of Services</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
-            saepe.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ipsa?
           </p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
             dignissimos vero fugiat numquam quasi.
           </p>
           <br />
-          <a href="#" class="btn btn-primary">Learn More</a>
+          <a href="#services2" class="btn btn-primary">Learn More</a>
         </div>
         <div class="col-lg-6">
-          <img src="img/sprinkler-temp05.jpg" class="img-fluid" />
+          <img
+            src="img/sprinkler-temp05.jpg"
+            alt="Close up of sprinkler"
+            class="img-fluid"
+          />
         </div>
       </div>
     </div>
+    <hr class="my-4" />
+
     <!-- Fixed Background -->
+    <figure>
+      <div class="fixed-wrap">
+        <div id="fixed"></div>
+      </div>
+    </figure>
 
-    <!-- About the Owner -->
+    <!-- Services -->
+    <div class="container-fluid padding bg-dark text-light">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Our Services</h1>
+        </div>
+        <hr />
+      </div>
+    </div>
 
-    <!-- Cards -->
+    <!-- Services Cards -->
+    <div class="container-fluid padding bg-dark text-light" id="services2">
+      <div class="row padding">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/img/lawnmower-temp06.jpg"
+              alt="Lawnmower cutting grass"
+              class="card-img-top"
+            />
+            <div class="card-body bg-primary text-light outline-primary">
+              <h4 class="card-title">Lawn Mowing</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                a!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/img/lawn-temp03.jpg"
+              alt="Big healthy lawn"
+              class="card-img-top"
+            />
+            <div class="card-body bg-primary text-light outline-primary">
+              <h4 class="card-title">Maintenance</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                a!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/img/sprinkler-temp05.jpg"
+              alt="Sprinkler spraying water"
+              class="card-img-top"
+            />
+            <div class="card-body bg-primary text-light outline-primary">
+              <h4 class="card-title">Sprinklers</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                a!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- About -->
+    <div id="about"></div>
     <!-- Two Column Section -->
 
     <!-- Connect -->
