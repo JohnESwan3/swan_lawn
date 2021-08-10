@@ -7,6 +7,7 @@ html {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
@@ -16,8 +17,27 @@ html {
   background: #333;
 }
 
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
+}
+
+.navbar {
+  padding: 0.8rem;
+}
+
+.navbar-nav li {
+  padding-right: 1.3rem;
+}
+
+.nav-link {
+  font-size: 1.1rem !important;
 }
 
 /* Firefox Fixes */
@@ -29,9 +49,55 @@ a {
   backface-visibility: visible;
 }
 
-.carousel img {
+.carousel-inner img {
   max-height: 83vh;
   min-width: auto;
+}
+
+.carousel-caption {
+  position: absolute;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+}
+
+.carousel-caption h1 {
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
+}
+
+.carousel-caption h3 {
+  /* font-weight: bold; */
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
+  /* padding-bottom: 1rem; */
+}
+
+.double {
+  display: flex;
+  flex-direction: column;
+  /* text-align: ; */
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+.services {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.services hr {
+  border-top: 2px solid;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-top: 1rem;
 }
 
 /* Fixed background image */
@@ -64,6 +130,22 @@ figure {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
+}
+
+footer i {
+  font-size: 2rem;
+}
+
+footer i.fab.fa-facebook-f:hover {
+  color: #3474ff;
+}
+
+footer i.fab.fa-instagram:hover {
+  color: #833ab4;
+}
+
+footer i.fas.fa-phone:hover {
+  color: greenyellow;
 }
 
 /* Bootstrap Padding */
