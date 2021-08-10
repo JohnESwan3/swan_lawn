@@ -336,7 +336,7 @@
           <p class="lead">
             Send a message to request a quote and we will contact you ASAP
           </p>
-          <form action="contact.php" method="post" id="contact-form">
+          <form data-netlify="true" method="POST" id="contact-form">
             <div class="messages"></div>
             <div class="controls">
               <div class="row">
@@ -421,6 +421,10 @@
                     ></textarea>
                     <div class="help-block with-errors"></div>
                   </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-control"></div>
+                  <div data-netlify-recaptcha="true"></div>
                 </div>
                 <div class="col-md-12">
                   <input
