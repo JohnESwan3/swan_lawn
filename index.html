@@ -333,7 +333,7 @@
     <!-- Contact Form -->
     <div class="container-fluid padding bg-dark text-light" id="contact">
       <div class="row padding d.flex justify-content-center">
-        <div class="col-lg-6">
+        <div class="col-lg-8">
           <h3>Connect With Swan Lawn</h3>
           <p class="lead">
             Send a message to request a quote and we will contact you ASAP
@@ -348,7 +348,7 @@
                     <input
                       id="form_name"
                       type="text"
-                      name="name"
+                      name="First Name"
                       class="form-control"
                       placeholder="Please Enter Your First Name"
                       required="required"
@@ -363,7 +363,7 @@
                     <input
                       id="form_lastname"
                       type="text"
-                      name="surname"
+                      name="Last Name"
                       class="form-control"
                       placeholder="Please Enter Your Last Name"
                       requried="required"
@@ -378,7 +378,7 @@
                     <input
                       id="form_email"
                       type="email"
-                      name="email"
+                      name="Email"
                       class="form-control"
                       placeholder="Please Enter Your Email"
                       required="required"
@@ -389,10 +389,28 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
+                    <label for="form-phone"
+                      >Phone Number * - (555)-555-5555</label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="Phone"
+                      class="form-control"
+                      required="required"
+                      placeholder="xxx-xxx-xxxx"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
                     <label for="form_need">What Are You Interested In? *</label>
                     <select
-                      id="form_need"
-                      name="need"
+                      id="form_inquiry"
+                      name="Inquiry"
                       class="form-control"
                       required="required"
                       data-error="Please Tell Us Your Interest"
@@ -407,14 +425,12 @@
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-6">
                   <div class="form-group">
-                    <label for="form_message">How Can We Help? *</label>
+                    <label for="form_message">Tell Us More *</label>
                     <textarea
                       id="form_message"
-                      name="message"
+                      name="Message"
                       class="form-control"
                       rows="4"
                       placeholder="Any info you give us will help us."
@@ -426,7 +442,7 @@
                 </div>
                 <div class="col-md-12">
                   <div class="field"></div>
-                  <div data-netlify-recaptcha="true"></div>
+                  <div data-netlify-recaptcha="true" required="required"></div>
                 </div>
                 <div class="col-md-12">
                   <input
