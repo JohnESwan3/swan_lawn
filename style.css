@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 html {
-  max-width: 1920px;
+  /* max-width: 1920px; */
   background-color: #292b2c;
   margin: auto;
   overflow-y: scroll;
